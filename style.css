@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  body{
+    background-color:#282B4D;
+  }
+  main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  header{
+    font-size: 36px;
+    font-weight: 600;
+  }
+  #input-section{
+    width: 45vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  #input{
+    height: 45px;
+    width: 80%;
+    background-color: #22233d;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 10px;
+    gap: 10px;
+  }
+  #input-section button{
+    outline: none;
+    border: none;
+    min-width: 80px;
+    width: 17%;
+    height: 45px;
+    background: rgba(74, 57, 127, 0.7);
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  #input input{
+    height: 45px;
+    width: 90%;
+    outline: none;
+    border: none;
+    background-color: #22233d;
+    border-radius: 10px;
+  }
+  
+  #display-weather{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .weather-card{
+    margin-top: 50px;
+    width: 338px;
+    height: 184px;
+    background-image: url('./images/Rectangle.png');
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0px 20px 20px;
+  }
+  .weather-card-div1{
+    display: flex;
+    justify-content: space-between;
+  }
+  .weather-card-div2{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+  }
+  .weather-card-div1-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 110px;
+  
+  }
+  .image-holder{
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .image-holder img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  .temp-holder{
+    font-family: sans-serif;
+    font-size: 46px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+  }
+  .weather-holder, .place-holder{
+    font-size: 14px;
+  }
+  .hp-holder{
+    display: flex;
+    gap: 10px;
+  }
+  .hp-holder span{
+    font-size: 12px;
+    color: #AFA2D9;
+  }
+  
+  
+  @media only screen and (max-width: 768px){
+    main{
+        gap: 20px;
+    }
+    header{
+        font-size: 26px;
+        font-weight: 600;
+    }
+    #input-section{
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #input{
+        height: 45px;
+        width: 100%;
+    } 
+  }
+  @media only screen and (max-width: 500px){
+    header{
+        font-size: 18px;
+    }
+  }
+  
+  
